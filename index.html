@@ -2,157 +2,566 @@
 <html lang="ru">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Битроид IT company</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Битроид IT company</title>
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__row">
-                <a class="header__logo" href="/">
-                    <img class="header__logo-img" src="images/logo.png" alt="logo">
-                </a>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Услуги
-                                <span class="header__nav-link-span">
-                                    <svg class="header__nav-link-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.685 6.12247L7.99747 10.81C7.93214 10.8755 7.85452 10.9275 7.76906 10.963C7.68359 10.9985 7.59196 11.0168 7.49942 11.0168C7.40688 11.0168 7.31525 10.9985 7.22978 10.963C7.14432 10.9275 7.0667 10.8755 7.00137 10.81L2.31387 6.12247C2.18178 5.99038 2.10757 5.81123 2.10757 5.62443C2.10757 5.43762 2.18178 5.25847 2.31387 5.12638C2.44596 4.99429 2.62512 4.92008 2.81192 4.92008C2.99872 4.92008 3.17788 4.99429 3.30997 5.12638L7.50001 9.31642L11.69 5.12579C11.8221 4.9937 12.0013 4.91949 12.1881 4.91949C12.3749 4.91949 12.554 4.9937 12.6861 5.12579C12.8182 5.25788 12.8924 5.43704 12.8924 5.62384C12.8924 5.81064 12.8182 5.9898 12.6861 6.12189L12.685 6.12247Z" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Продукты
-                                <span class="header__nav-link-span">
-                                    <svg class="header__nav-link-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.685 6.12247L7.99747 10.81C7.93214 10.8755 7.85452 10.9275 7.76906 10.963C7.68359 10.9985 7.59196 11.0168 7.49942 11.0168C7.40688 11.0168 7.31525 10.9985 7.22978 10.963C7.14432 10.9275 7.0667 10.8755 7.00137 10.81L2.31387 6.12247C2.18178 5.99038 2.10757 5.81123 2.10757 5.62443C2.10757 5.43762 2.18178 5.25847 2.31387 5.12638C2.44596 4.99429 2.62512 4.92008 2.81192 4.92008C2.99872 4.92008 3.17788 4.99429 3.30997 5.12638L7.50001 9.31642L11.69 5.12579C11.8221 4.9937 12.0013 4.91949 12.1881 4.91949C12.3749 4.91949 12.554 4.9937 12.6861 5.12579C12.8182 5.25788 12.8924 5.43704 12.8924 5.62384C12.8924 5.81064 12.8182 5.9898 12.6861 6.12189L12.685 6.12247Z" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Готовые решения
-                                <span class="header__nav-link-span">
-                                    <svg class="header__nav-link-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.685 6.12247L7.99747 10.81C7.93214 10.8755 7.85452 10.9275 7.76906 10.963C7.68359 10.9985 7.59196 11.0168 7.49942 11.0168C7.40688 11.0168 7.31525 10.9985 7.22978 10.963C7.14432 10.9275 7.0667 10.8755 7.00137 10.81L2.31387 6.12247C2.18178 5.99038 2.10757 5.81123 2.10757 5.62443C2.10757 5.43762 2.18178 5.25847 2.31387 5.12638C2.44596 4.99429 2.62512 4.92008 2.81192 4.92008C2.99872 4.92008 3.17788 4.99429 3.30997 5.12638L7.50001 9.31642L11.69 5.12579C11.8221 4.9937 12.0013 4.91949 12.1881 4.91949C12.3749 4.91949 12.554 4.9937 12.6861 5.12579C12.8182 5.25788 12.8924 5.43704 12.8924 5.62384C12.8924 5.81064 12.8182 5.9898 12.6861 6.12189L12.685 6.12247Z" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">Кейсы и проекты
-                                <span class="header__nav-link-span">
-                                    <svg class="header__nav-link-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.685 6.12247L7.99747 10.81C7.93214 10.8755 7.85452 10.9275 7.76906 10.963C7.68359 10.9985 7.59196 11.0168 7.49942 11.0168C7.40688 11.0168 7.31525 10.9985 7.22978 10.963C7.14432 10.9275 7.0667 10.8755 7.00137 10.81L2.31387 6.12247C2.18178 5.99038 2.10757 5.81123 2.10757 5.62443C2.10757 5.43762 2.18178 5.25847 2.31387 5.12638C2.44596 4.99429 2.62512 4.92008 2.81192 4.92008C2.99872 4.92008 3.17788 4.99429 3.30997 5.12638L7.50001 9.31642L11.69 5.12579C11.8221 4.9937 12.0013 4.91949 12.1881 4.91949C12.3749 4.91949 12.554 4.9937 12.6861 5.12579C12.8182 5.25788 12.8924 5.43704 12.8924 5.62384C12.8924 5.81064 12.8182 5.9898 12.6861 6.12189L12.685 6.12247Z" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a class="header__nav-link" href="#">О нас
-                                <span class="header__nav-link-span">
-                                    <svg class="header__nav-link-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.685 6.12247L7.99747 10.81C7.93214 10.8755 7.85452 10.9275 7.76906 10.963C7.68359 10.9985 7.59196 11.0168 7.49942 11.0168C7.40688 11.0168 7.31525 10.9985 7.22978 10.963C7.14432 10.9275 7.0667 10.8755 7.00137 10.81L2.31387 6.12247C2.18178 5.99038 2.10757 5.81123 2.10757 5.62443C2.10757 5.43762 2.18178 5.25847 2.31387 5.12638C2.44596 4.99429 2.62512 4.92008 2.81192 4.92008C2.99872 4.92008 3.17788 4.99429 3.30997 5.12638L7.50001 9.31642L11.69 5.12579C11.8221 4.9937 12.0013 4.91949 12.1881 4.91949C12.3749 4.91949 12.554 4.9937 12.6861 5.12579C12.8182 5.25788 12.8924 5.43704 12.8924 5.62384C12.8924 5.81064 12.8182 5.9898 12.6861 6.12189L12.685 6.12247Z" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <a class="header__phone" href="tel:+74954142808">+7 (495) 414 28 08</a>
-                <button class="header__search-btn" type="button">
-                    <svg class="header__search-btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21.7959 20.2041L17.3437 15.75C18.6787 14.0104 19.3019 11.8282 19.087 9.64606C18.8722 7.46389 17.8353 5.44515 16.1867 3.99936C14.5382 2.55356 12.4014 1.78898 10.2098 1.8607C8.01829 1.93243 5.93607 2.83509 4.38558 4.38558C2.83509 5.93607 1.93243 8.01829 1.8607 10.2098C1.78898 12.4014 2.55356 14.5382 3.99936 16.1867C5.44515 17.8353 7.46389 18.8722 9.64606 19.087C11.8282 19.3019 14.0104 18.6787 15.75 17.3437L20.2059 21.8006C20.3106 21.9053 20.4348 21.9883 20.5715 22.0449C20.7083 22.1015 20.8548 22.1307 21.0028 22.1307C21.1508 22.1307 21.2973 22.1015 21.4341 22.0449C21.5708 21.9883 21.695 21.9053 21.7997 21.8006C21.9043 21.696 21.9873 21.5717 22.044 21.435C22.1006 21.2983 22.1298 21.1517 22.1298 21.0037C22.1298 20.8557 22.1006 20.7092 22.044 20.5725C21.9873 20.4357 21.9043 20.3115 21.7997 20.2069L21.7959 20.2041ZM4.12499 10.5C4.12499 9.23914 4.49888 8.0066 5.19938 6.95823C5.89987 5.90987 6.89551 5.09277 8.06039 4.61026C9.22527 4.12775 10.5071 4.00151 11.7437 4.24749C12.9803 4.49347 14.1162 5.10063 15.0078 5.99219C15.8994 6.88375 16.5065 8.01966 16.7525 9.25629C16.9985 10.4929 16.8722 11.7747 16.3897 12.9396C15.9072 14.1045 15.0901 15.1001 14.0418 15.8006C12.9934 16.5011 11.7608 16.875 10.5 16.875C8.80977 16.8733 7.18927 16.201 5.99411 15.0059C4.79894 13.8107 4.12673 12.1902 4.12499 10.5Z" />
-                    </svg>
-                </button>
-                <button class="btn header__cta-btn" type="button">Обсудить проект</button>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">
-            <nav class="breadcrumbs" aria-label="Breadcrumb">
-                <img class="breadcrumbs__icon" src="images/icons/breadcrumbs-icon.svg" alt="breadcrumbs icon">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link breadcrumbs__link--main" href="/">Главная</a>
-                        <span class="breadcrumbs__separator"><span>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">Услуги</a>
-                        <span class="breadcrumbs__separator"><span>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">Создание сайтов</a>
-                        <span class="breadcrumbs__separator"><span>
-                    </li>
-                    <li class="breadcrumbs__item">Сайт+SEO</li>
-                </ul>
-            </nav>
-            <section class="hero">
-                <div class="hero__content">
-                    <h1 class="hero__title">Создание сайта под ключ с SEO-продвижением</h1>
-                    <p class="hero__description">
-                        Разработка сайтов с учётом требований по SEO-продвижению с гарантией топовых позиций в поиске. Создаём веб-проекты, которые максимально быстро занимают верхние позиции в поисковиках. Проводим оптимизацию перед запуском, чтобы вам не приходилось менять контент и мета-теги после старта.
-                    </p>
-                    <div class="hero__buttons">
-                        <button class="btn" type="button">Заказать</button>
-                        <button class="hero__btn" type="button">Рассчитать стоимость
-                            <svg class="hero__btn-icon" width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="section services">
-                <h2 class="section__title section__title--services ">Кому рекомендуем выбрать создание сайтов с SEO-раскруткой</h2>
-                <ul class="services__list">
-                    <li class="services__item">
-                        <article class="services__card">
-                            <h3 class="services__card-title">Для компаний, которые хотят увеличить продажи</h3>
-                            <p class="services__card-description">
-                                Создание и продвижение интернет-магазинов. Проектируем структуру фильтров под нечастотные запросы. Внедрим умный фильтр для SEO-тегов.
-                            </p>
-                            <img class="services__card-img" src="images/services/services-card-1.jpg" alt="services card 1">
-                        </article>
-                    </li>
-                    <li class="services__item">
-                        <article class="services__card">
-                            <h3 class="services__card-title">Сфера услуг</h3>
-                            <p class="services__card-description">
-                                Создание и продвижение продающих сайтов. Делаем специализированные сайты под SEO-запросы. Прорабатываем структуру под гео-запросы.
-                            </p>
-                            <img class="services__card-img" src="images/services/services-card-2.jpg" alt="Сфера услуг">
-                        </article>
-                    </li>
-                    <li class="services__item">
-                        <article class="services__card">
-                            <h3 class="services__card-title">B2B-сайты</h3>
-                            <p class="services__card-description">
-                                Разработка и продвижение сайтов компаний, специализирующихся на предоставлении услуг корпоративному сегменту.
-                            </p>
-                            <img class="services__card-img" src="images/services/services-card-3.jpg" alt="B2B-сайты">
-                        </article>
-                    </li>
-                </ul>
-            </section>
-        </div>
 
-    </main>
-    <footer class="footer"></footer>
+  <header class="header">
     <div class="container">
+      <div class="header__row">
+        <a class="header__logo" href="/">
+          <img class="header__logo-img" src="images/logo.png" alt="logo">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Услуги
+                <span class="header__nav-link-span">
+                  <svg class="header__nav-link-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.685 6.12247L7.99747 10.81C7.93214 10.8755 7.85452 10.9275 7.76906 10.963C7.68359 10.9985 7.59196 11.0168 7.49942 11.0168C7.40688 11.0168 7.31525 10.9985 7.22978 10.963C7.14432 10.9275 7.0667 10.8755 7.00137 10.81L2.31387 6.12247C2.18178 5.99038 2.10757 5.81123 2.10757 5.62443C2.10757 5.43762 2.18178 5.25847 2.31387 5.12638C2.44596 4.99429 2.62512 4.92008 2.81192 4.92008C2.99872 4.92008 3.17788 4.99429 3.30997 5.12638L7.50001 9.31642L11.69 5.12579C11.8221 4.9937 12.0013 4.91949 12.1881 4.91949C12.3749 4.91949 12.554 4.9937 12.6861 5.12579C12.8182 5.25788 12.8924 5.43704 12.8924 5.62384C12.8924 5.81064 12.8182 5.9898 12.6861 6.12189L12.685 6.12247Z" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Продукты
+                <span class="header__nav-link-span">
+                  <svg class="header__nav-link-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.685 6.12247L7.99747 10.81C7.93214 10.8755 7.85452 10.9275 7.76906 10.963C7.68359 10.9985 7.59196 11.0168 7.49942 11.0168C7.40688 11.0168 7.31525 10.9985 7.22978 10.963C7.14432 10.9275 7.0667 10.8755 7.00137 10.81L2.31387 6.12247C2.18178 5.99038 2.10757 5.81123 2.10757 5.62443C2.10757 5.43762 2.18178 5.25847 2.31387 5.12638C2.44596 4.99429 2.62512 4.92008 2.81192 4.92008C2.99872 4.92008 3.17788 4.99429 3.30997 5.12638L7.50001 9.31642L11.69 5.12579C11.8221 4.9937 12.0013 4.91949 12.1881 4.91949C12.3749 4.91949 12.554 4.9937 12.6861 5.12579C12.8182 5.25788 12.8924 5.43704 12.8924 5.62384C12.8924 5.81064 12.8182 5.9898 12.6861 6.12189L12.685 6.12247Z" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Готовые решения
+                <span class="header__nav-link-span">
+                  <svg class="header__nav-link-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.685 6.12247L7.99747 10.81C7.93214 10.8755 7.85452 10.9275 7.76906 10.963C7.68359 10.9985 7.59196 11.0168 7.49942 11.0168C7.40688 11.0168 7.31525 10.9985 7.22978 10.963C7.14432 10.9275 7.0667 10.8755 7.00137 10.81L2.31387 6.12247C2.18178 5.99038 2.10757 5.81123 2.10757 5.62443C2.10757 5.43762 2.18178 5.25847 2.31387 5.12638C2.44596 4.99429 2.62512 4.92008 2.81192 4.92008C2.99872 4.92008 3.17788 4.99429 3.30997 5.12638L7.50001 9.31642L11.69 5.12579C11.8221 4.9937 12.0013 4.91949 12.1881 4.91949C12.3749 4.91949 12.554 4.9937 12.6861 5.12579C12.8182 5.25788 12.8924 5.43704 12.8924 5.62384C12.8924 5.81064 12.8182 5.9898 12.6861 6.12189L12.685 6.12247Z" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Кейсы и проекты
+                <span class="header__nav-link-span">
+                  <svg class="header__nav-link-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.685 6.12247L7.99747 10.81C7.93214 10.8755 7.85452 10.9275 7.76906 10.963C7.68359 10.9985 7.59196 11.0168 7.49942 11.0168C7.40688 11.0168 7.31525 10.9985 7.22978 10.963C7.14432 10.9275 7.0667 10.8755 7.00137 10.81L2.31387 6.12247C2.18178 5.99038 2.10757 5.81123 2.10757 5.62443C2.10757 5.43762 2.18178 5.25847 2.31387 5.12638C2.44596 4.99429 2.62512 4.92008 2.81192 4.92008C2.99872 4.92008 3.17788 4.99429 3.30997 5.12638L7.50001 9.31642L11.69 5.12579C11.8221 4.9937 12.0013 4.91949 12.1881 4.91949C12.3749 4.91949 12.554 4.9937 12.6861 5.12579C12.8182 5.25788 12.8924 5.43704 12.8924 5.62384C12.8924 5.81064 12.8182 5.9898 12.6861 6.12189L12.685 6.12247Z" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">О нас
+                <span class="header__nav-link-span">
+                  <svg class="header__nav-link-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.685 6.12247L7.99747 10.81C7.93214 10.8755 7.85452 10.9275 7.76906 10.963C7.68359 10.9985 7.59196 11.0168 7.49942 11.0168C7.40688 11.0168 7.31525 10.9985 7.22978 10.963C7.14432 10.9275 7.0667 10.8755 7.00137 10.81L2.31387 6.12247C2.18178 5.99038 2.10757 5.81123 2.10757 5.62443C2.10757 5.43762 2.18178 5.25847 2.31387 5.12638C2.44596 4.99429 2.62512 4.92008 2.81192 4.92008C2.99872 4.92008 3.17788 4.99429 3.30997 5.12638L7.50001 9.31642L11.69 5.12579C11.8221 4.9937 12.0013 4.91949 12.1881 4.91949C12.3749 4.91949 12.554 4.9937 12.6861 5.12579C12.8182 5.25788 12.8924 5.43704 12.8924 5.62384C12.8924 5.81064 12.8182 5.9898 12.6861 6.12189L12.685 6.12247Z" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__phone" href="tel:+74954142808">+7 (495) 414 28 08</a>
+        <button class="header__search-btn" type="button">
+          <svg class="header__search-btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.7959 20.2041L17.3437 15.75C18.6787 14.0104 19.3019 11.8282 19.087 9.64606C18.8722 7.46389 17.8353 5.44515 16.1867 3.99936C14.5382 2.55356 12.4014 1.78898 10.2098 1.8607C8.01829 1.93243 5.93607 2.83509 4.38558 4.38558C2.83509 5.93607 1.93243 8.01829 1.8607 10.2098C1.78898 12.4014 2.55356 14.5382 3.99936 16.1867C5.44515 17.8353 7.46389 18.8722 9.64606 19.087C11.8282 19.3019 14.0104 18.6787 15.75 17.3437L20.2059 21.8006C20.3106 21.9053 20.4348 21.9883 20.5715 22.0449C20.7083 22.1015 20.8548 22.1307 21.0028 22.1307C21.1508 22.1307 21.2973 22.1015 21.4341 22.0449C21.5708 21.9883 21.695 21.9053 21.7997 21.8006C21.9043 21.696 21.9873 21.5717 22.044 21.435C22.1006 21.2983 22.1298 21.1517 22.1298 21.0037C22.1298 20.8557 22.1006 20.7092 22.044 20.5725C21.9873 20.4357 21.9043 20.3115 21.7997 20.2069L21.7959 20.2041ZM4.12499 10.5C4.12499 9.23914 4.49888 8.0066 5.19938 6.95823C5.89987 5.90987 6.89551 5.09277 8.06039 4.61026C9.22527 4.12775 10.5071 4.00151 11.7437 4.24749C12.9803 4.49347 14.1162 5.10063 15.0078 5.99219C15.8994 6.88375 16.5065 8.01966 16.7525 9.25629C16.9985 10.4929 16.8722 11.7747 16.3897 12.9396C15.9072 14.1045 15.0901 15.1001 14.0418 15.8006C12.9934 16.5011 11.7608 16.875 10.5 16.875C8.80977 16.8733 7.18927 16.201 5.99411 15.0059C4.79894 13.8107 4.12673 12.1902 4.12499 10.5Z" />
+          </svg>
+        </button>
+        <button class="btn header__cta-btn" type="button">Обсудить проект</button>
+      </div>
     </div>
-    </footer>
+  </header>
 
+  <main class="main">
+    <div class="container">
+
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <img class="breadcrumbs__icon" src="images/icons/breadcrumbs-icon.svg" alt="breadcrumbs icon">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--main" href="/">Главная</a>
+            <span class="breadcrumbs__separator"><span>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Услуги</a>
+            <span class="breadcrumbs__separator"><span>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Создание сайтов</a>
+            <span class="breadcrumbs__separator"><span>
+          </li>
+          <li class="breadcrumbs__item">Сайт+SEO</li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Создание сайта под ключ с SEO-продвижением</h1>
+          <p class="hero__description">
+            Разработка сайтов с учётом требований по SEO-продвижению с гарантией топовых позиций в поиске. Создаём веб-проекты, которые максимально быстро занимают верхние позиции в поисковиках. Проводим оптимизацию перед запуском, чтобы вам не приходилось менять контент и мета-теги после старта.
+          </p>
+          <div class="hero__buttons">
+            <button class="btn" type="button">Заказать</button>
+            <button class="hero__btn" type="button">Рассчитать стоимость
+              <svg class="hero__btn-icon" width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services">
+        <h2 class="section__title section__title--services ">Кому рекомендуем выбрать создание сайтов с SEO-раскруткой</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <article class="services__card">
+              <h3 class="services__card-title">Интернет-магазин</h3>
+              <p class="services__card-description">
+                Создание и продвижение интернет-магазинов. Проектируем структуру фильтров под нечастотные запросы. Внедрим умный фильтр для SEO-тегов.
+              </p>
+              <img class="services__card-img" src="images/services/services-card-1.jpg" alt="services card 1">
+            </article>
+          </li>
+          <li class="services__item">
+            <article class="services__card">
+              <h3 class="services__card-title">Сфера услуг</h3>
+              <p class="services__card-description">
+                Создание и продвижение продающих сайтов. Делаем специализированные сайты под SEO-запросы. Прорабатываем структуру под гео-запросы.
+              </p>
+              <img class="services__card-img" src="images/services/services-card-2.jpg" alt="Сфера услуг">
+            </article>
+          </li>
+          <li class="services__item">
+            <article class="services__card">
+              <h3 class="services__card-title">B2B-сайты</h3>
+              <p class="services__card-description">
+                Разработка и продвижение сайтов компаний, специализирующихся на предоставлении услуг корпоративному сегменту.
+              </p>
+              <img class="services__card-img" src="images/services/services-card-3.jpg" alt="B2B-сайты">
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section stacks">
+        <div class="section__intro">
+          <h2 class="section__title">Что входит в услугу по созданию сайта с продвижением в поисковых системах</h2>
+          <p class="section__description">
+            Мы подходим к проекту комплексно: создание и оптимизация сайта идут параллельно, чтобы ваш ресурс сразу после запуска был готов привлекать органический трафик. Все работы разделены на два взаимосвязанных стека.
+          </p>
+        </div>
+        <div class="stacks__list">
+          <div class="stacks__item">
+            <h3 class="stacks__item-title">Стек 1: Разработка</h3>
+            <div class="stacks__item-content">
+              <p class="stacks__item-content-intro">Закладываем технический фундамент, от которого зависит скорость, стабильность и дальнейшая масштабируемость ресурса. Оптимизация и разработка сайтов для нас — это не просто код, а продуманная архитектура.</p>
+              <h4 class="stacks__item-subheading">Бэкенд:</h4>
+              <ul class="stacks__item-list">
+                <li class="stacks__item-list-item">Проектируем структуру базы данных.</li>
+                <li class="stacks__item-list-item">Настраиваем серверную часть под высокие нагрузки.</li>
+                <li class="stacks__item-list-item">Реализуем гибкую систему управления контентом.</li>
+              </ul>
+              <h4 class="stacks__item-subheading">Вёрстка:</h4>
+              <ul class="stacks__item-list">
+                <li class="stacks__item-list-item">Верстаем сайт по стандартам HTML5/CSS3 — поисковые роботы легко считывают структуру страницы.</li>
+                <li class="stacks__item-list-item">Адаптируем интерфейс под все устройства — мобильная версия проходит проверку Google Mobile-Friendly, что положительно влияет на ранжирование.</li>
+                <li class="stacks__item-list-item">
+                  Оптимизируем фронтенд-код для высокой скорости загрузки.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="stacks__item">
+            <h3 class="stacks__item-title">Стек 2: SEO-оптимизация</h3>
+            <div class="stacks__item-content">
+              <p class="stacks__item-content-intro">Параллельно с разработкой мы проводим SEO-оптимизацию сайта под ключ.</p>
+              <ul class="stacks__item-list">
+                <li class="stacks__item-list-item">Собираем семантическое ядро, анализируем поисковые запросы вашей тематики, отбираем релевантные ключевые слова.</li>
+                <li class="stacks__item-list-item">Группируем запросы по смыслу и распределяем по страницам сайта, чтобы каждая отвечала на конкретный запрос пользователя.</li>
+                <li class="stacks__item-list-item">Составляем Robots.txt — закрываем от индексации служебные страницы и открываем важный контент.</li>
+                <li class="stacks__item-list-item">Генерируем карту сайта (Sitemap.xml) для ускорения индексации новых страниц и отслеживания структуры ресурса поисковиками.</li>
+                <li class="stacks__item-list-item">Размечаем контент через Schema.org, чтобы повысить кликабельность.</li>
+                <li class="stacks__item-list-item">Настраиваем ссылки в соцсетях через Open Graph.</li>
+                <li class="stacks__item-list-item">Настраиваем 301-редиректы для сохранения ссылочного веса.</li>
+                <li class="stacks__item-list-item">Формируем понятные человеку адреса страниц — это улучшает восприятие ссылки и ранжирование.</li>
+                <li class="stacks__item-list-item">Указываем канонические адреса через Canonical.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portfolio">
+        <div class="section__row">
+          <div class="section__intro">
+            <h2 class="section__title">Кейсы и проекты</h2>
+            <p class="section__description">
+              Помогаем бизнесам решать задачи максимально эффективно 
+            </p>
+          </div>
+          <a href="#" class="btn section__intro-btn">Смотреть все кейсы</a>
+          <div class="portfolio__slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Слайды -->
+                <div class="swiper-slide portfolio__slider-item">
+                  <article class="portfolio__slider-card">
+                    <img class="portfolio__slider-card-img portfolio__slider-card-img--1" src="images/portfolio/portfolio-card-1.png" alt="portfolio card 1">
+                    <p class="portfolio__slider-card-tag">
+                      Автоматизация
+                    </p>
+                    <h3 class="portfolio__slider-card-title">
+                      Автоматизация процессов для строительной компании
+                    </h3>
+                    <div class="portfolio__slider-card-description">Ускорили выполнение задач строительной компании на 10%.</div>
+                    <a href="#" class="portfolio__slider-card-link">
+                      Читать кейс
+                      <img src="images/icons/arrow-right-icon.svg" alt="Читать кейс">
+                    </a>
+                  </article>
+                </div>
+                <div class="swiper-slide portfolio__slider-item">
+                  <article class="portfolio__slider-card">
+                    <img class="portfolio__slider-card-img portfolio__slider-card-img--2" src="images/portfolio/portfolio-card-2.png" alt="portfolio card 2">
+                    <p class="portfolio__slider-card-tag">
+                      Корпоративные порталы
+                    </p>
+                    <h3 class="portfolio__slider-card-title">
+                      Стройхолдинг
+                    </h3>
+                    <div class="portfolio__slider-card-description">Ускорили выполнение задач строительной компании на 20%.</div>
+                    <a href="#" class="portfolio__slider-card-link">
+                      Читать кейс
+                      <img src="images/icons/arrow-right-icon.svg" alt="Читать кейс">
+                    </a>
+                  </article>
+                </div>
+                <div class="swiper-slide portfolio__slider-item">
+                  <article class="portfolio__slider-card">
+                    <img class="portfolio__slider-card-img portfolio__slider-card-img--3" src="images/portfolio/portfolio-card-3.png" alt="portfolio card 3">
+                    <p class="portfolio__slider-card-tag">
+                      Автоматизация
+                    </p>
+                    <h3 class="portfolio__slider-card-title">
+                      Автоматизация процессов для строительной компании
+                    </h3>
+                    <div class="portfolio__slider-card-description">Ускорили выполнение задач строительной компании на 30%.</div>
+                    <a href="#" class="portfolio__slider-card-link">
+                      Читать кейс
+                      <img src="images/icons/arrow-right-icon.svg" alt="Читать кейс">
+                    </a>
+                  </article>
+                </div>
+                <div class="swiper-slide portfolio__slider-item">
+                  <article class="portfolio__slider-card">
+                    <img class="portfolio__slider-card-img portfolio__slider-card-img--1" src="images/portfolio/portfolio-card-1.png" alt="portfolio card 1">
+                    <p class="portfolio__slider-card-tag">
+                      Корпоративные порталы
+                    </p>
+                    <h3 class="portfolio__slider-card-title">
+                      Стройхолдинг
+                    </h3>
+                    <div class="portfolio__slider-card-description">Ускорили выполнение задач строительной компании на 40%.</div>
+                    <a href="#" class="portfolio__slider-card-link">
+                      Читать кейс
+                      <img src="images/icons/arrow-right-icon.svg" alt="Читать кейс">
+                    </a>
+                  </article>
+                </div>
+              </div>
+
+              <!-- Пагинация (точки) -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- Стрелки навигации (опционально) -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section faq">
+        <div class="section__row section__row--faq">
+          <div class="section__intro">
+            <h2 class="section__title">Часто задаваемые вопросы</h2>
+            <p class="section__description">
+              Собрали ответы на самые частые вопросы наших клиентов
+            </p>
+          </div>
+          <a href="#" class="section__intro-link">Читать все ответы на вопросы
+            <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.7071 8.07112C25.0976 7.6806 25.0976 7.04743 24.7071 6.65691L18.3431 0.292946C17.9526 -0.0975785 17.3195 -0.0975785 16.9289 0.292946C16.5384 0.68347 16.5384 1.31664 16.9289 1.70716L22.5858 7.36401L16.9289 13.0209C16.5384 13.4114 16.5384 14.0446 16.9289 14.4351C17.3195 14.8256 17.9526 14.8256 18.3431 14.4351L24.7071 8.07112ZM0 7.36401V8.36401H24V7.36401V6.36401H0V7.36401Z" fill="#1E1E1E" />
+            </svg>
+          </a>
+          <div class="faq__accordion accordion accordion-flush" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Чем SEO-сайт отличается от обычного?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  SEO-сайт изначально проектируется с учётом требований поисковых систем: чистый код, правильная иерархия заголовков, оптимизированные мета-теги и высокая скорость загрузки. В отличие от обычного сайта, где оптимизацию часто добавляют постфактум, здесь SEO-параметры закладываются уже на этапе прототипирования. Это позволяет избежать дорогостоящих доработок после запуска и быстрее выйти в топ поиска. Такой ресурс лучше индексируется, получает больше органического трафика и демонстрирует высокую конверсию. Вы получаете готовый маркетинговый актив.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Нужно ли платить за ссылки?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p>Да, если речь идёт о покупке внешних ссылок для продвижения (крауд-маркетинг, гостевые посты, биржи ссылок).</p>
+                  <p>
+                    Но в современном SEO акцент смещён в сторону естественного ссылочного профиля — полезный контент,который сам привлекает ссылки. Ссылки — это не единственный, но важный фактор ранжирования.
+                  </p>
+                  <p>Мы всегда обсуждаем стратегию ссылочного продвижения индивидуально.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Что такое SEO-структура?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p>SEO-структура — это логическое построение сайта, понятное поисковым системам и пользователям.</p>
+                  <p>Она включает: правильную вложенность разделов (URL вида site.com/catalog/product/), ЧПУ-адреса, хлебные крошки, внутреннюю перелинковку, заголовки H1-H6 и грамотное распределение ключевых слов по страницам. Хорошая структура помогает поисковикам быстрее индексировать сайт и повышает позиции в выдаче.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Сколько стоит создание и продвижение сайта?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  <p></p>Цена зависит от сложности проекта. Сайт-визитка: от 30 000 ₽, интернет-магазин: от 80 000–150 000 ₽, кастомный портал: от 300 000 ₽.</p>
+                  <p>Продвижение обычно оплачивается ежемесячно (от 20 000 ₽) либо по модели постоплаты за результат (фиксированная сумма за один запрос в топ-10).</p>
+                  <p>Точную стоимость рассчитываем после брифа — она всегда индивидуальна.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section lead">
+        <div class="section__intro">
+          <h2 class="section__title">Получите коммерческое предложение</h2>
+          <p class="section__description">
+            Закажите предварительный SEO-аудит вашей ниши и КП на разработку
+          </p>
+        </div>
+
+        <form class="lead__form">
+          <div class="lead__form-row">
+            <div class="lead__form-col">
+              <label class="visually-hidden lead__form-label" for="name">Имя</label>
+              <input class="lead__form-input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="lead__form-col">
+              <label class="visually-hidden lead__form-label" for="phone">Телефон</label>
+              <input class="lead__form-input" type="tel" id="phone" name="phone" placeholder="+7 (999) 999-00-00" required>
+            </div>
+          </div>
+          <div class="lead__form-block">
+            <label class="visually-hidden lead__form-label" for="site-link">Сообщение</label>
+            <input class="lead__form-input" type="url" id="site-link" name="site-link" placeholder="Ссылка на сайт" required>
+          </div>
+          <button class="btn lead__form-btn" type="submit">Получить консультацию</button>
+          <input class="visually-hidden lead__form-checkbox" type="checkbox" name="privacy-policy" id="privacy-policy" value="" required>
+          <label class="lead__form-checkbox-label" for="privacy-policy">
+            <span class="lead__form-checkbox-icon"></span>
+            <span>Нажимая на кнопку «Отправить», вы соглашаетесь с  <a class="lead__form-privacy-link" href="#">Правилами обработки персональных данных и Политикой конфиденциальности</a></span>
+          </label>
+        </form>
+
+      </section>
+
+  </main>
+
+  <footer class="footer">
+    <section class="footer__top">
+      <div class="container">
+        <div class="footer__top-row">
+          <div class="section__intro section__intro--footer">
+            <h2 class="section__title">Единая платформа — максимум эффективности</h2>
+            <p class="section__description">Забудьте о множестве разрозненных сервисов и приложений.</p>
+          </div>
+          <button class="btn footer__top-btn" type="button">Получить консультацию</button>
+        </div>
+    </section>
+    <div class="container">
+
+
+
+      <section class="footer__middle">
+        <div class="footer__middle-row">
+          <div class="footer__contacts">
+            <a href="/" class="footer__logo-link">
+              <img class="footer__logo-img" src="/images/logo-footer.png" alt="Битроид">
+            </a>
+            <ul class="footer__contacts-list">
+              <li class="footer__contacts-item">
+                <a href="tel:+74954142808" class="footer__link">+7 (495) 414 28 08</a>
+              </li>
+              <li class="footer__contacts-item">
+                <a href="mailto:b24@bitroid.ru" class="footer__link">b24@bitroid.ru</a>
+              </li>
+              <li class="footer__contacts-item">
+                428038, Чувашская республика, г. Чебоксары,<br> ул. Мате Залка, д 10, офис 1
+              </li>
+            </ul>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-icon" src="/images/icons/vk.png" alt="Мы в ВКонтакте">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-icon" src="/images/icons/telegram.png" alt="Мы в Telegram">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-icon" src="/images/icons/youtube.png" alt="Мы на YouTube">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-col">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">О компании</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Контакты</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Отзывы</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Новости</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Статьи</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Акции</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Вопрос-ответ</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Оплата</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="footer__menu-col">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Внедрение CRM</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Создание сайта</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Перенос сайта</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Поддержка сайтов</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Решения для государственных организаций</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Обучение</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Автоматизация</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Интеграция и настройка</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-col footer__menu-col--last">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">1С Битрикс лицензия</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Продление лицензий</a>
+                </li>
+              </ul>
+              <ul class="footer__menu-list footer__menu-list--last">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Для партнеров</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__link">Вакансии</a>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+          <div class="footer__secondary-menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__link">ОКВЭД</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__link">дополнительная инфа как в реестре</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer__bottom">
+        <div class="footer__bottom-row">
+          <div class="footer__bottom-copyright">
+            <div class="footer__bottom-text">
+              <p>2026&copy;Bitroid.</p>
+              <p>Все права защищены.</p>
+            </div>
+          </div>
+          <div class="footer__bottom-privacy">
+            <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__bottom-col">
+            <a href="#" class="footer__bottom-link">Пользовательское соглашение</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

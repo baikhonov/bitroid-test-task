@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
 
-    const portfolioSlider = new Swiper('.swiper', {
+    const portfolioSlider = new Swiper('.portfolio__slider .swiper', {
         speed: 500,
         initialSlide: 1,
         watchSlidesProgress: true,
@@ -29,6 +29,90 @@ window.addEventListener('DOMContentLoaded', function() {
                 centeredSlides: true,
             },
         },
+    });
+
+    let servicesSlider = null;
+    const servicesSliderQuery = window.matchMedia('(max-width: 640px)');
+
+    const initServicesSlider = function() {
+        if (servicesSlider || !document.querySelector('.services__slider')) {
+            return;
+        }
+
+        servicesSlider = new Swiper('.services__slider', {
+            speed: 450,
+            slidesPerView: 1,
+            spaceBetween: 12,
+            pagination: {
+                el: '.services__pagination',
+                clickable: true,
+            },
+        });
+    };
+
+    const destroyServicesSlider = function() {
+        if (!servicesSlider) {
+            return;
+        }
+
+        servicesSlider.destroy(true, true);
+        servicesSlider = null;
+    };
+
+    const syncServicesSlider = function(isMobile) {
+        if (isMobile) {
+            initServicesSlider();
+            return;
+        }
+
+        destroyServicesSlider();
+    };
+
+    syncServicesSlider(servicesSliderQuery.matches);
+    servicesSliderQuery.addEventListener('change', function(event) {
+        syncServicesSlider(event.matches);
+    });
+
+    let stacksSlider = null;
+    const stacksSliderQuery = window.matchMedia('(max-width: 640px)');
+
+    const initStacksSlider = function() {
+        if (stacksSlider || !document.querySelector('.stacks__slider')) {
+            return;
+        }
+
+        stacksSlider = new Swiper('.stacks__slider', {
+            speed: 450,
+            slidesPerView: 1,
+            spaceBetween: 12,
+            pagination: {
+                el: '.stacks__pagination',
+                clickable: true,
+            },
+        });
+    };
+
+    const destroyStacksSlider = function() {
+        if (!stacksSlider) {
+            return;
+        }
+
+        stacksSlider.destroy(true, true);
+        stacksSlider = null;
+    };
+
+    const syncStacksSlider = function(isMobile) {
+        if (isMobile) {
+            initStacksSlider();
+            return;
+        }
+
+        destroyStacksSlider();
+    };
+
+    syncStacksSlider(stacksSliderQuery.matches);
+    stacksSliderQuery.addEventListener('change', function(event) {
+        syncStacksSlider(event.matches);
     });
 
     const burgerButton = document.querySelector('.header__burger-btn');

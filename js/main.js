@@ -31,6 +31,7 @@ window.addEventListener('DOMContentLoaded', function() {
         },
     });
 
+    // На маленьких экранах блок services работает как слайдер, на десктопе остается статичным.
     let servicesSlider = null;
     const servicesSliderQuery = window.matchMedia('(max-width: 640px)');
 
@@ -59,6 +60,7 @@ window.addEventListener('DOMContentLoaded', function() {
         servicesSlider = null;
     };
 
+    // Создает/удаляет слайдер при переходе через мобильный брейкпоинт.
     const syncServicesSlider = function(isMobile) {
         if (isMobile) {
             initServicesSlider();
@@ -126,6 +128,7 @@ window.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
+    // Переносит CTA в бургер-меню на планшете/мобилке и возвращает рядом с поиском на десктопе.
     const syncCtaPlacement = function(isTablet) {
         if (isTablet) {
             if (!headerMenu.contains(headerCtaButton)) {
@@ -164,6 +167,7 @@ window.addEventListener('DOMContentLoaded', function() {
         openMenu();
     });
 
+    // Закрывает мобильное меню при клике вне его области.
     document.addEventListener('click', function(event) {
         if (!tabletQuery.matches || !headerMenu.classList.contains('is-open')) {
             return;

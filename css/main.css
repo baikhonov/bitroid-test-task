@@ -99,6 +99,8 @@ img {
   display: flex;
   align-items: center;
   gap: 4px;
+  padding: 10px 0;
+
   color: #1e1e1e;
 
   transition: color 0.3s ease;
@@ -110,8 +112,69 @@ img {
   color: #34ae6b;
 }
 
+.header__nav-item {
+  position: relative;
+}
+
+.header__nav-link[aria-haspopup="true"] {
+  cursor: pointer;
+}
+
 .header__nav-link-icon {
   fill: currentColor;
+  transition: transform 0.25s ease;
+}
+
+.header__nav-item:hover .header__nav-link-icon,
+.header__nav-item:focus-within .header__nav-link-icon {
+  transform: rotate(180deg);
+}
+
+.header__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+
+  min-width: 240px;
+  padding: 12px 0;
+  margin: 0;
+
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(30, 30, 30, 0.08);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.header__nav-item:hover .header__dropdown,
+.header__nav-item:focus-within .header__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.header__dropdown-link {
+  display: block;
+  padding: 8px 16px;
+  color: #1e1e1e;
+  white-space: nowrap;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.header__dropdown-link:hover,
+.header__dropdown-link:focus {
+  color: #34ae6b;
+  background-color: rgba(52, 174, 107, 0.06);
 }
 
 .header__phone {
